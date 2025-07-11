@@ -1,0 +1,14 @@
+Priority
+
+1. inline
+2. internal
+3. external
+
+Priority
+
+1. id #
+2. class .
+3. tag name
+
+div tag aka division tag, block tag (Consumes 100% of the line)
+

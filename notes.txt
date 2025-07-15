@@ -12,3 +12,19 @@ Priority
 
 div tag aka division tag, block tag (Consumes 100% of the line)
 
+margin : outer space
+padding : inner space
+
+if we write 4 values, it represents top right bottom left
+if we write 3 values, it represents top right&left bottom
+if we write 2 values, it represents top&bottom left&right
+if we write 1 value, it applies to all sides
+
+border-radius
+
+if we write 4 values, it represents top-left top-right bottom-right bottom-left
+if we write 3 values, it represents top-left top-right&bottom-left bottom-right
+if we write 2 values, it represents top-left&bottom-right top-right&bottom-left
+if we write 1 value, it applies to all sides
+
+we can write 0/0px if we don't want it from any particular sides

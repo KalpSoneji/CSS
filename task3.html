@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Five Boxes Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 250px;
+      height: 250px;
+      background-repeat: no-repeat;
+      background-size: 100px 100px;
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Top row */
+    .box1 {
+      float: left;
+      margin: 20px;
+      background-color: red;
+      background-image: url('https://images.all-free-download.com/images/thumbjpg/ocean_sunset_187141.jpg');
+      background-position: top left;
+    }
+
+    .box2 {
+      float: right;
+      margin: 20px;
+      background-color: yellow;
+      background-image: url('https://images.all-free-download.com/images/thumbjpg/ocean_sunset_187141.jpg');
+      background-position: top right;
+    }
+
+    /* Bottom row */
+    .row-break {
+      clear: both;
+    }
+
+    .box3 {
+      float: left;
+      margin: 100px 20px 0 20px;
+      background-color: teal;
+      background-image: url('https://images.all-free-download.com/images/thumbjpg/ocean_sunset_187141.jpg');
+      background-position: bottom left;
+    }
+
+    .box4 {
+      float: right;
+      margin: 100px 20px 0 20px;
+      background-color: pink;
+      background-image: url('https://images.all-free-download.com/images/thumbjpg/ocean_sunset_187141.jpg');
+      background-position: bottom right;
+    }
+
+    /* Center box */
+    .center-wrapper {
+      width: 100%;
+      text-align: center;
+      margin-top: -80px;
+    }
+
+    .box5 {
+      display: inline-block;
+      background-color: green;
+      background-image: url('https://images.all-free-download.com/images/thumbjpg/ocean_sunset_187141.jpg');
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Left & Top Right -->
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+
+  <!-- Clear floats -->
+  <div class="row-break"></div>
+
+  <!-- Bottom Left & Bottom Right -->
+  <div class="box box3"></div>
+  <div class="box box4"></div>
+
+  <!-- Center -->
+  <div class="center-wrapper">
+    <div class="box box5"></div>
+  </div>
+
+</body>
+</html>

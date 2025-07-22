@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<style>
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .patch{
+        width: 100%;
+        height: 150px;
+        background-color: rgba(0, 0, 0, 0.301);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 30px;
+    }
+
+    .logos{
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        background-color: azure;
+        line-height: 100px;
+        overflow: hidden;
+    }
+
+    i:hover{
+        transform: scale(2.5);
+        transition: 0.5s;
+    }
+
+    .fa-linkedin:hover{
+        color: darkblue;
+    }
+
+    .fa-github:hover{
+        color: black;
+    }
+
+    .fa-instagram:hover{
+        color: pink;
+    }
+
+    .fa-snapchat:hover{
+        color: yellow;
+    }
+
+    .fa-whatsapp:hover{
+        color: greenyellow;
+    }
+</style>
+<body>
+    <div class="patch">
+        <div class="logos"><i class="fa-brands fa-linkedin fa-2xl"></i></div>
+        <div class="logos"><i class="fa-brands fa-github fa-2xl"></i></div>
+        <div class="logos"><i class="fa-brands fa-instagram fa-2xl"></i></div>
+        <div class="logos"><i class="fa-brands fa-snapchat fa-2xl"></i></div>
+        <div class="logos"><i class="fa-brands fa-whatsapp fa-2xl"></i></div>
+    </div>
+</body>
+</html>

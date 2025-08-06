@@ -28,3 +28,10 @@ if we write 2 values, it represents top-left&bottom-right top-right&bottom-left
 if we write 1 value, it applies to all sides
 
 we can write 0/0px if we don't want it from any particular sides
+
+position
+
+absolute counts from body 
+relative counts from its position
+fixed stays as it is wherever we scroll
+sticky stays on screen until its div stays on the screen

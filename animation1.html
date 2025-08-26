@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 200px;
+        width: 200px;
+        background-color: red;
+
+        animation-name: ani1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+    }
+    @keyframes ani1{
+        from{
+            height: 0;
+            width: 0;
+        }
+        to{
+            height: 400px;
+            width: 400px;
+            background-color: blue;
+            border-radius: 50%;
+            border: 10px dotted yellow;
+            margin: 100px 400px;
+            background-image: url('https://www.samanyagyan.com/images/post/mahatma-gandhi-biography-in-hindi.jpg');
+        }
+    }
+</style>
+<body>
+
+    <div class="box">
+
+    </div>
+
+    
+</body>
+</html>

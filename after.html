@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 300px;
+        width: 300px;
+        background-image: url('https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg');
+        background-size: cover;
+    }
+    .box::before{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        background-color: rgba(255, 68, 0, 0.817);
+        transition: 1s;
+    }
+    .box::after{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.82);
+        right: 844px;
+        bottom: 348px;
+        /* left: 157px; */
+        transition: 1s;
+    }
+    .box:hover::before{
+        width: 0;
+        height: 0;
+        transition: 1s;
+    }
+    .box:hover::after{
+        width: 0;
+        height: 0;
+        transition: 1s;
+    }
+</style>
+<body>
+
+    <div class="box">
+
+    </div>
+    
+</body>
+</html>

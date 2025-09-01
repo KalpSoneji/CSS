@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fixed Dropdown Menu</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 90px;
+    width: 100%;
+    background-color: teal;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    width: 150px;
+    text-align: center;
+    line-height: 90px;
+    position: relative;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: orangered;
+}
+
+/* ALL dropdown levels - force exact same dimensions */
+.navbar ul ul,
+.navbar ul ul ul,
+.navbar ul ul ul ul,
+.navbar ul ul ul ul ul {
+    position: absolute;
+    background-color: cadetblue;
+    display: none;
+    width: 150px !important;
+    min-width: 150px !important;
+    box-sizing: border-box;
+}
+
+/* First level dropdown positioning */
+.navbar ul ul {
+    top: 100%;
+    left: 0;
+}
+
+/* All nested levels positioning */
+.navbar ul ul ul,
+.navbar ul ul ul ul,
+.navbar ul ul ul ul ul {
+    left: 150px !important;
+    top: 0 !important;
+}
+
+/* Show dropdowns on hover */
+.navbar ul li:hover > ul {
+    display: block;
+}
+
+/* Force ALL dropdown items to have exact same dimensions - override inheritance */
+.navbar ul ul li,
+.navbar ul ul ul li,
+.navbar ul ul ul ul li,
+.navbar ul ul ul ul ul li {
+    float: none !important;
+    width: 150px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    position: relative !important;
+    /* Reset any inherited sizing */
+    font-size: 16px !important;
+}
+
+/* Force ALL dropdown links to have same styling - prevent height inheritance */
+.navbar ul ul li a,
+.navbar ul ul ul li a,
+.navbar ul ul ul ul li a,
+.navbar ul ul ul ul ul li a {
+    font-size: 16px !important;
+    padding: 0 10px !important;
+    width: 150px !important;
+    height: 50px !important;
+    box-sizing: border-box !important;
+    line-height: 50px !important;
+    display: block !important;
+    /* Prevent any inheritance from parent elements */
+    text-align: center !important;
+    border: none !important;
+    margin: 0 !important;
+}
+
+/* Additional reset to prevent inheritance cascade */
+.navbar ul ul,
+.navbar ul ul ul,
+.navbar ul ul ul ul,
+.navbar ul ul ul ul ul {
+    /* Reset font size to prevent inheritance scaling */
+    font-size: 16px !important;
+}
+
+/* Ensure hover states work consistently at all levels */
+.navbar ul ul li a:hover,
+.navbar ul ul ul li a:hover,
+.navbar ul ul ul ul li a:hover,
+.navbar ul ul ul ul ul li a:hover {
+    background-color: orangered !important;
+    height: 50px !important;
+    line-height: 50px !important;
+}
+</style>
+<body>
+<div class="navbar">
+    <ul id="first">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a>
+            <ul>
+                <li><a href="">Web Design</a></li>
+                <li><a href="">Development</a></li>
+                <li><a href="">Consulting</a>
+                    <ul id="second">
+                        <li><a href="">Strategy</a></li>
+                        <li><a href="">Analysis</a></li>
+                        <li><a href="">Advanced</a>
+                            <ul id="third">
+                                <li><a href="">AI Solutions</a></li>
+                                <li><a href="">Data Science</a></li>
+                                <li><a href="">Cloud</a></li>
+                                <li><a href="">Security</a></li>
+                                <li><a href="">Mobile</a></li>
+                                <li><a href="">IoT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Training</a></li>
+                        <li><a href="">Maintenance</a></li>
+                    </ul>
+                </li>
+                <li><a href="">SEO</a></li>
+                <li><a href="">Marketing</a></li>
+                <li><a href="">Hosting</a></li>
+            </ul>
+        </li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Feedback</a></li>
+        <li><a href="">Login</a></li>
+    </ul>
+</div>
+</body>
+</html>

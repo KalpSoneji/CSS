@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .main {
+        background-image: url('https://media.tenor.com/3GgX9XG4fe0AAAAM/blue-fly.gif');
+        background-size: cover;   
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;            
+        width: 100%;              
+    }
+
+    .bird img{
+        height: 100px;
+        width: 100px;
+        margin-top: 552px;
+
+        animation-name: flying;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes flying {
+        0% {
+            transform: translate(0, 0);
+        } 
+        
+        100% {
+            transform: translate(1070px, -560px);           
+        }
+    }
+
+</style>
+
+<body>
+
+    <div class="main">
+
+        <div class="bird">
+            <img src="bird.gif" alt="">
+        </div>
+
+    </div>
+
+</body>
+</html>
